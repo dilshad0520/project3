@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.calculater {
+    padding: 0px 10px 0px 10px;
+}
+
+.form {
+    width: 204px;
+}
+
+input {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: aqua;
+
+
+}
+
+.form p {
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.btn {}
+
+.btn button {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: aqua;
+    background-color: cadetblue;
+}
+
+.btn button:hover {
+    color: #dcb800;
+    background-color: aqua;
+}
+
+.greater {}
+
+input {}
+
+.greater p {
+    padding: 15px;
+    background-color: brown;
+    color: blueviolet;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 210px;
+}
+
+.great {
+    text-align: center;
+    background-color: blue;
+    width: 210px;
+}
+
+.great button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    color: orange;
+    font-size: 20px;
+}
+
+.great button:hover {
+    color: #dcb800;
+    background-color: aqua;
+}
+
+
+
+
+
+@media (max-width:320px) and (min-width:480px) {
+    .calculater {
+        padding: 0px 10px 0px 10px;
+    }
+}

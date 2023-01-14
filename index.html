@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="calculater">
+        <div class="container">
+            <div class="area">
+                <div class="form">
+                    <input type="text" id="number1" placeholder="ENTER">
+                    <input type="text" id="number2" placeholder="ENTER">
+                    <p id="show"></p>
+                    <div class="btn">
+                        <button onclick="result()">ADD</button>
+                        <button onclick="input()">SUBTRACT</button>
+                        <button onclick="marks()">MULTIPLY</button>
+                        <button onclick="output()">DIVIDE</button>
+                        <button onclick="Parsent()">MODULAS</button>
+                        <button onclick="cancel()">CANCEL</button>
+                    </div>
+                </div>
+                <div class="greater">
+                    <input type="text" id="series1" placeholder="ENTER">
+                    <input type="text" id="series2" placeholder="ENTER">
+                    <input type="text" id="series3" placeholder="ENTER">
+                    <p id="suit"></p>
+                    <div class="great">
+                        <button onclick="geatest()">click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function result() {
+            let x1 = document.getElementById('number1').value
+            let x2 = document.getElementById('number2').value
+            number1 = parseInt(x1)
+            number2 = parseInt(x2)
+            console.log(number1 + number2)
+            let show = document.getElementById('show')
+            let sum = (number1 + number2)
+            show.innerText = ' sum of ' + number1 + ' and ' + number2 + '=' + sum
+        }
+        function input() {
+            let x1 = document.getElementById('number1').value
+            let x2 = document.getElementById('number2').value
+            number1 = parseInt(x1)
+            number2 = parseInt(x2)
+            console.log(number1 - number2)
+            let show = document.getElementById('show')
+            let sum = (number1 - number2)
+            show.innerText = ' sum of ' + number1 + ' and ' + number2 + '=' + sum
+        }
+        function marks() {
+            let x1 = document.getElementById('number1').value
+            let x2 = document.getElementById('number2').value
+            number1 = parseInt(x1)
+            number2 = parseInt(x2)
+            console.log(number1 * number2)
+            let show = document.getElementById('show')
+            let sum = (number1 * number2)
+            show.innerText = ' sum of ' + number1 + ' and ' + number2 + '=' + sum
+        }
+        function output() {
+            let x1 = document.getElementById('number1').value
+            let x2 = document.getElementById('number2').value
+            number1 = parseInt(x1)
+            number2 = parseInt(x2)
+            console.log(number1 / number2)
+            let show = document.getElementById('show')
+            let sum = (number1 / number2)
+            show.innerText = ' sum of ' + number1 + ' and ' + number2 + '=' + sum
+        }
+        function Parsent() {
+            let x1 = document.getElementById('number1').value
+            let x2 = document.getElementById('number2').value
+            number1 = parseInt(x1)
+            number2 = parseInt(x2)
+            console.log(number1 % number2)
+            let show = document.getElementById('show')
+            let sum = (number1 % number2)
+            show.innerText = ' sum of ' + number1 + ' and ' + number2 + '=' + sum
+        }
+
+
+        function geatest() {
+            let s1 = document.getElementById('series1').value
+            let s2 = document.getElementById('series2').value
+            let s3 = document.getElementById('series3').value
+            s1 = parseInt(s1)
+            s2 = parseInt(s2)
+            s3 = parseInt(s3)
+            if (s1 > s2 && s1 > s3) {
+                console.log(s1 + 'number is greater ')
+                document.getElementById('suit').innerText = s1 + " number is greater "
+            }
+            else if (s1 == s2 && s2 == s3) {
+                console.log(s1 + 'number are equal')
+                document.getElementById('suit').innerText = s1 + " number are equal "
+            }
+            else if (s2 > s1 && s2 == s3) {
+                console.log(s1 + 'small number are both')
+                document.getElementById('suit').innerText = s1 + " small number are both "
+            }
+            else if (s2 > s1 && s2 > s3) {
+                console.log(s2 + 'number is greater')
+                document.getElementById('suit').innerText = s2 + " number is greater "
+            }
+            else {
+                console.log(s1 + 'number is greater')
+                document.getElementById('suit').innerText = s3 + " number is greater "
+            }
+
+        }
+    </script>
+</body>
+
+</html>
